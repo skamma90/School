@@ -1,8 +1,11 @@
-function ShowMenus() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+window.addEventListener('scroll',function(){
+  const header = document.querySelector('header');
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+function togglemenu(){
+  const menutoggle = document.querySelector('.menutoggle');
+  const navigation = document.querySelector('.navigation');
+  menutoggle.classList.toggle('active');
+  navigation.classList.toggle('active');
+};
