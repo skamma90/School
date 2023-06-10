@@ -41,15 +41,22 @@ header {
   transition: .3s;
 }
 
-
+.logochild{
+display: inline-block;
+vertical-align: middle;
+}
 header .logo {
   color: var(--white);
   font-weight: bold;
   font-size: 2.5em;
   text-decoration: none;
 }
-
-
+header .logo span{
+ text-align: center;
+}
+header .logo img{
+  width: 90px;
+}
 header .logo .small {
   font-size: 1.5rem;
 } 
@@ -61,10 +68,6 @@ header .logo .small {
 .details {
   color: var(--white);
   text-align: left;
-}
-
-.red {
-  color: var(--red);
 }
 
 
@@ -118,18 +121,19 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(/Assets/Images/school_bg2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(/Assets/Images/school_bg2.jpg) no-repeat center fixed;
   background-size: cover;
 }
 
 .banner .content {
   max-width: 900px;
-  text-align: center;
+  text-align: left;
 }
 
 .banner .content h2 {
-  font-size: 5em;
-  color: var(--white);
+  font-size: 2.5em;
+  color: var(--red);
+  font-style: italic;
 }
 
 .banner .content p {
@@ -158,6 +162,7 @@ p {
   background: var(--white);
   padding: 10px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  opacity: 0.9;
 }
 
 .sticky .logo {
@@ -166,6 +171,15 @@ p {
 
 .sticky .navigation li a {
   color: var(--black);
+}
+
+.titleText {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.red {
+  color: var(--red);
 }
 
 @media (max-width: 991px) {
@@ -227,11 +241,11 @@ p {
   section {
     padding: 20px;
   }
-
+/* 
   .banner .content h2 {
     font-size: 3em;
     color: #fff;
-  }
+  } */
 
   .row {
     flex-direction: column;
@@ -240,48 +254,5 @@ p {
   .row .col50 {
     position: relative;
     width: 100%;
-  }
-
-  .row .col50 .imgbx {
-    height: 300px;
-    margin-top: 20px;
-  }
-
-  .menu .content {
-    margin-top: 20px;
-  }
-
-  .menu .content .box {
-    margin: 10px;
-  }
-
-  .menu .content .box .imgbx {
-    height: 260px;
-  }
-
-  .titeText {
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  .expert .content {
-    margin-top: 20px;
-  }
-
-  .testimonial .content .box {
-    margin: 10px;
-    padding: 30px;
-  }
-
-  .expert .content .box {
-    margin: 20px;
-  }
-
-  .contactform {
-    padding: 40px 30px;
-  }
-
-  .sticky {
-    padding: 10px 30px;
   }
 }
