@@ -41,7 +41,7 @@ header {
   transition: 0.3s;
 }
 
-.logochild {
+.child {
   display: inline-block;
   vertical-align: middle;
 }
@@ -50,6 +50,7 @@ header .logo {
   font-weight: bold;
   font-size: 2.5em;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 header .logo img {
@@ -103,15 +104,13 @@ header .navigation li .active {
   border-radius: 10px;
 }
 
-section {
-  padding: 80px;
-}
-
 p {
   font-weight: 300;
   color: var(--black);
 }
-
+section {
+  padding: 1rem;
+}
 .banner {
   position: relative;
   width: 100%;
@@ -157,6 +156,12 @@ p {
   letter-spacing: 5px;
 }
 
+.principallogo{
+ 
+  width: 100px;
+  border-radius: 50%;
+}
+
 .sticky {
   background: var(--white);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -166,6 +171,8 @@ p {
 .sticky .logo {
   color: var(--black);
   font-size: 1.5rem;
+  transition: 0.3s;
+
 }
 .sticky .logo .small {
   color: var(--black);
@@ -230,7 +237,7 @@ p {
   background-color: var(--red);
   color: var(--white);
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 #myTopBtn:hover {
   background-color: #555;
@@ -293,9 +300,6 @@ p {
     filter: invert(1);
   }
 
-  section {
-    padding: 20px;
-  }
   /* 
   .banner .content h2 {
     font-size: 3em;
