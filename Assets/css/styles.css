@@ -5,8 +5,8 @@
   --white: #fff;
   --black: #111;
   --sticky-bg: #cfcfc9;
-  --color-bg: #000;
-  --color-fg: #fff;
+  --color-bg: #cfcfc9;
+  --color-fg: #111;
   --gold: #eae40b;
 }
 
@@ -28,6 +28,7 @@ p {
   color: #111;
 }
 
+/* #region Header */
 header {
   position: fixed;
   top: 0;
@@ -38,14 +39,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
-.child {
-  display: inline-block;
-  vertical-align: middle;
+.LogoParent{
+  display: flex;
 }
-header .logo {
+
+header .logo { 
   color: var(--white);
   font-weight: bold;
   font-size: 2.5em;
@@ -53,27 +54,20 @@ header .logo {
   transition: 0.3s;
 }
 
-header .logo img {
+.logoParent img {
+  margin: 0 10 0 0px;
   width: 90px;
 }
-header .logo .small {
+
+.logoParent .small {
   color: var(--white);
   font-size: 1.5rem;
   text-align: center;
 }
-
-#banner .content .details {
-  font-size: 2.5rem;
-}
-
-.details {
-  color: var(--white);
-  text-align: left;
-}
-
 header .navigation {
   position: relative;
   display: flex;
+  margin-top: 30px;
 }
 
 header .navigation li {
@@ -104,13 +98,23 @@ header .navigation li .active {
   border-radius: 10px;
 }
 
+/* #endregion */
+
+.details {
+  color: var(--white);
+  text-align: left;
+}
+
 p {
   font-weight: 300;
   color: var(--black);
 }
 section {
   padding: 1rem;
+  background-color: transparent;
 }
+
+/* #region Banner*/
 .banner {
   position: relative;
   width: 100%;
@@ -128,6 +132,10 @@ section {
   text-align: left;
 }
 
+.banner strong{
+  font-size: 2.5rem;
+}
+
 .banner .content h2 {
   font-size: 2.5em;
   color: var(--red);
@@ -138,6 +146,7 @@ section {
   font-size: 1em;
   color: var(--white);
 }
+/* #endreion */
 
 .btn {
   font-size: 1.5em;
@@ -156,12 +165,23 @@ section {
   letter-spacing: 5px;
 }
 
-.principallogo{
- 
+/* #region From the Principal*/
+.principal{
+  align-items: center;
+  display: flex; 
+  padding: 20px;
+}
+.principal img{ 
+  margin: 10px;
   width: 100px;
   border-radius: 50%;
 }
+.principal div span{
+  text-align: center;
+}
+/* #endregion */
 
+/* #region Sticky*/
 .sticky {
   background: var(--white);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -186,12 +206,12 @@ section {
 .sticky .navigation {
   position: relative;
   display: flex;
+  margin-top: 0px;
 }
 
 .sticky .navigation li {
   list-style: none;
-  margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 
 .sticky .navigation li a {
@@ -212,6 +232,7 @@ section {
   padding: 10px;
   border-radius: 10px;
 }
+/* #endregion */
 
 .titleText {
   font-size: 1.8em;
@@ -222,6 +243,7 @@ section {
   color: var(--red);
 }
 
+/* #region Go to top button*/
 #myTopBtn {
   display: none;
   position: fixed;
@@ -242,11 +264,12 @@ section {
 #myTopBtn:hover {
   background-color: #555;
 }
+/* #endregion */
 
 @media (max-width: 991px) {
   header,
   header .sticky {
-    padding: 20 20px;
+    padding: 20px;
   }
 
   header .navigation {
@@ -275,7 +298,7 @@ section {
   header .navigation li a {
     color: var(--black);
     font-size: 1.6em;
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   .menutoggle {
@@ -299,12 +322,6 @@ section {
   .sticky .menutoggle {
     filter: invert(1);
   }
-
-  /* 
-  .banner .content h2 {
-    font-size: 3em;
-    color: #fff;
-  } */
 
   .row {
     flex-direction: column;
