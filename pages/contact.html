@@ -1,12 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
+<!-- #region Head Section-->
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bright Star English School</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- #region CSS Section-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="/Assets/css/styles.css">
+    <!-- #endregion -->
 </head>
+<!-- #endregion -->
+
+<!-- #region Body Section-->
+
 <body>
-<h1> Contact page</h1>    
+
+    <button onclick="gotoTop()" id="myTopBtn" title="Go to top">&uarr;</button>
+
+    <!-- #region Header Section-->
+    <header>
+        <a href="/index.html" class="Logo">
+            <div class="LogoParent">
+                <div><img src="/Assets/Images/BES Logo.png"></div>
+                <div> <span>Bright<span class="red">Star</span><br>
+                        <p class="small"> English School</p>
+                </div>
+            </div>
+        </a>
+
+        </div>
+        <!-- <a href="#" class="logo"></a> -->
+        <div class="menutoggle" onclick="togglemenu();">
+
+        </div>
+        <ul class="navigation">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a  class="active" href="/pages/contact.html">Contact</a></li>
+            <!-- <li><a href="#menu">Menu</a></li>
+                <li><a href="#expert">Expert</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contactus">Contact Us</a></li> -->
+        </ul>
+    </header>
+    <!-- #endregion -->
+    
+<!-- #region Contact Form-->
+    <section class="contact-us banner" id="contact-section">
+        <form id="contact" action="" method="post">
+
+            <div class="section-heading">
+                <h4>Contact us</h4>
+            </div>
+
+            <div class="inputField">
+                <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>
+            </div>
+
+            <div class="inputField">
+                <input type="Email" name="email" id="email" placeholder="Your email" required="" />
+            </div>
+
+            <div class="inputField">
+                <textarea name="message" id="message" placeholder="Your message"></textarea>
+           </div>
+
+            <div class="inputField btn">
+                <button type="submit" id="form-submit" class="main-gradient-button">Send a message</button>
+            </div>
+
+        </form>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region Footer-->
+    <section>
+        <div class="footer">
+            <span>Copyright &copy; 2023
+                <a href="#"><span class="red">B</span>right Star English School</a>.
+                </p>
+        </div>
+    </section>
+    <!-- <section>
+            <div class="footer">
+                <span> &copy; <span class="red">B</span>right Star English Secondary School, 2023</span>
+        </section> -->
+    <!-- #endregion -->
+    <!-- #region JS section -->
+    <script src="/Assets/js/app.js"></script>
+    <!-- #endregion -->
 </body>
+<!-- #endregion -->
+
 </html>
